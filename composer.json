@@ -1,24 +1,24 @@
 {
-  "name": ":vendor_slug/:package_slug",
-  "description": ":package_description",
+  "name": "spiral-packages/ignition-bridge",
+  "description": "Ignition bridge",
   "keywords": [
-    ":vendor_name",
+    "spiral-packages",
     "spiral",
-    ":package_slug"
+    "ignition"
   ],
-  "homepage": "https://github.com/:vendor_slug/:package_slug",
+  "homepage": "https://github.com/spiral-packages/ignition-bridge",
   "license": "MIT",
   "authors": [
     {
-      "name": ":author_name",
-      "email": "author@domain.com",
+      "name": "Aleksei Gagarin",
+      "email": "roxblnfk@ya.ru",
       "role": "Developer"
     }
   ],
   "require": {
-    "php": "^8.0",
-    "spiral/boot": "^2.9",
-    "spiral/console": "^2.9"
+    "php": "^8.1",
+    "spiral/boot": "^3.0",
+    "spiral/exceptions": "^3.0"
   },
   "require-dev": {
     "mockery/mockery": "^1.5",
@@ -28,13 +28,13 @@
   },
   "autoload": {
     "psr-4": {
-      "VendorName\\Skeleton\\": "src"
+      "Spiral\\Ignition\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "VendorName\\Skeleton\\Tests\\App\\": "tests/app",
-      "VendorName\\Skeleton\\Tests\\": "tests/src"
+      "Spiral\\Ignition\\Tests\\App\\": "tests/app",
+      "Spiral\\Ignition\\Tests\\": "tests/src"
     }
   },
   "scripts": {
@@ -47,7 +47,7 @@
   "extra": {
     "spiral": {
       "bootloaders": [
-        "VendorName\\Skeleton\\Bootloader\\SkeletonBootloader"
+        "Spiral\\Ignition\\Bootloader\\IgnitionBootloader"
       ]
     }
   },
