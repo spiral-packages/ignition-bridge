@@ -6,7 +6,7 @@ namespace Spiral\Ignition\Bootloader;
 
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Bootloader\ErrorHandlerBootloader;
-use Spiral\Exceptions\ErrorHandler;
+use Spiral\Exceptions\ExceptionHandler;
 use Spiral\Ignition\IgnitionRenderer;
 
 class IgnitionBootloader extends Bootloader
@@ -15,7 +15,7 @@ class IgnitionBootloader extends Bootloader
         ErrorHandlerBootloader::class,
     ];
 
-    public function boot(ErrorHandler $handler): void
+    public function boot(ExceptionHandler $handler): void
     {
         $handler->addRenderer(new IgnitionRenderer());
     }

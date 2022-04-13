@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Spiral\Ignition;
 
 use Spatie\Ignition\Ignition;
-use Spiral\Exceptions\ErrorRendererInterface;
+use Spiral\Exceptions\ExceptionRendererInterface;
 use Spiral\Exceptions\Verbosity;
 
-final class IgnitionRenderer implements ErrorRendererInterface
+final class IgnitionRenderer implements ExceptionRendererInterface
 {
     private Ignition $ignition;
 
