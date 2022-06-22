@@ -18,12 +18,13 @@
   "require": {
     "php": "^8.1",
     "spatie/ignition": "^1.2",
-    "spiral/framework": "3.0.x-dev"
+    "spiral/framework": "^3.0"
   },
   "require-dev": {
     "mockery/mockery": "^1.5",
     "phpunit/phpunit": "^9.5",
-    "vimeo/psalm": "^4.9"
+    "vimeo/psalm": "^4.9",
+    "spiral/nyholm-bridge": "^1.2"
   },
   "autoload": {
     "psr-4": {

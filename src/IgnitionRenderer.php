@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Spiral\Ignition;
 
 use Spatie\Ignition\Ignition;
+use Spiral\Boot\DirectoriesInterface;
+use Spiral\Boot\Environment\DebugMode;
 use Spiral\Exceptions\ExceptionRendererInterface;
 use Spiral\Exceptions\Verbosity;
 
@@ -12,9 +14,11 @@ final class IgnitionRenderer implements ExceptionRendererInterface
 {
     private Ignition $ignition;
 
-    public function __construct()
+    public function __construct(DirectoriesInterface $dirs, DebugMode $debugMode)
     {
-        $this->ignition = Ignition::make();
+        $this->ignition = Ignition::make()
+            ->shouldDisplayException($debugMode->isEnabled())
+            ->applicationPath($dirs->get('root'));
     }
 
     public function render(
