@@ -25,8 +25,7 @@
     "mockery/mockery": "^1.5",
     "phpunit/phpunit": "^9.5.24",
     "vimeo/psalm": "^4.9",
-    "spiral/nyholm-bridge": "^1.2",
-    "spiral/framework": "^3.0"
+    "spiral/nyholm-bridge": "^1.2"
   },
   "autoload": {
     "psr-4": {
@@ -37,7 +36,10 @@
     "psr-4": {
       "Spiral\\Ignition\\Tests\\App\\": "tests/app",
       "Spiral\\Ignition\\Tests\\": "tests/src"
-    }
+    },
+    "files": [
+      "tests/polyfill.php"
+    ]
   },
   "scripts": {
     "test": "vendor/bin/phpunit",
