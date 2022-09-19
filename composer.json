@@ -36,10 +36,7 @@
     "psr-4": {
       "Spiral\\Ignition\\Tests\\App\\": "tests/app",
       "Spiral\\Ignition\\Tests\\": "tests/src"
-    },
-    "files": [
-      "tests/polyfill.php"
-    ]
+    }
   },
   "scripts": {
     "test": "vendor/bin/phpunit",
