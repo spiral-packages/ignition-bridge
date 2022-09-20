@@ -1,9 +1,15 @@
 # Ignition bridge
 
-[![PHP](https://img.shields.io/packagist/php-v/spiral-packages/ignition-bridge.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/ignition-bridge)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spiral-packages/ignition-bridge.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/ignition-bridge)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spiral-packages/ignition-bridge/run-tests?label=tests&style=flat-square)](https://github.com/spiral-packages/ignition-bridge/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/spiral-packages/ignition-bridge.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/ignition-bridge)
+[![PHP Version Require](https://poser.pugx.org/spiral-packages/ignition-bridge/require/php)](https://packagist.org/packages/spiral-packages/ignition-bridge)
+[![Latest Stable Version](https://poser.pugx.org/spiral-packages/ignition-bridge/v/stable)](https://packagist.org/packages/spiral-packages/ignition-bridge)
+[![phpunit](https://github.com/spiral-packages/ignition-bridge/actions/workflows/phpunit.yml/badge.svg)](https://github.com/spiral-packages/ignition-bridge/actions)
+[![psalm](https://github.com/spiral-packages/ignition-bridge/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/spiral-packages/ignition-bridge/actions)
+[![Codecov](https://codecov.io/gh/spiral-packages/ignition-bridge/branch/master/graph/badge.svg)](https://codecov.io/gh/spiral-packages/ignition-bridge)
+[![Total Downloads](https://poser.pugx.org/spiral-packages/ignition-bridge/downloads)](https://packagist.org/packages/spiral-packages/ignition-bridge)
+[![type-coverage](https://shepherd.dev/github/spiral-packages/ignition-bridge/coverage.svg)](https://shepherd.dev/github/spiral-packages/ignition-bridge)
+[![psalm-level](https://shepherd.dev/github/spiral-packages/ignition-bridge/level.svg)](https://shepherd.dev/github/spiral-packages/ignition-bridge)
+
+[Framework Bundle](https://github.com/spiral/framework)
 
 ## Requirements
 
@@ -31,7 +37,8 @@ protected const LOAD = [
 ];
 ```
 
-> Note: if you are using [`spiral-packages/discoverer`](https://github.com/spiral-packages/discoverer),
+> **Note**
+> If you are using [`spiral-packages/discoverer`](https://github.com/spiral-packages/discoverer),
 > you don't need to register bootloader by yourself.
 
 ## Testing
@@ -59,4 +66,4 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information. Maintained by [Spiral Scout](https://spiralscout.com).

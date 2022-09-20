@@ -17,12 +17,13 @@
   ],
   "require": {
     "php": "^8.1",
-    "spatie/ignition": "^1.2",
-    "spiral/framework": "^3.0"
+    "spiral/boot": "^3.0",
+    "spiral/exceptions": "^3.0",
+    "spatie/ignition": "^1.2"
   },
   "require-dev": {
     "mockery/mockery": "^1.5",
-    "phpunit/phpunit": "^9.5",
+    "phpunit/phpunit": "^9.5.24",
     "vimeo/psalm": "^4.9",
     "spiral/nyholm-bridge": "^1.2"
   },
